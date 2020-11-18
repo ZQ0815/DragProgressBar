@@ -6,6 +6,7 @@
 //
 
 #import "DragProgressBarViewController.h"
+#import "SLProgressView.h"
 
 #define navHeight 40
 
@@ -25,6 +26,11 @@
     mainView.frame = CGRectMake(0, self.view.frame.size.height / 2 - 100 - navHeight, self.view.frame.size.width, 200);
     mainView.backgroundColor = [UIColor grayColor];
     
+    // 直线进度条
+    SLProgressView *SLProgress = [[SLProgressView alloc] initWithFrame:CGRectMake(0, 95, 200, 10)];
+    [SLProgress setProgress:11];
+    
+    [mainView addSubview:SLProgress];
     [self.view addSubview:mainView];
 }
 

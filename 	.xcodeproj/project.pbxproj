@@ -11,6 +11,7 @@
 		F099534A2564FE3600F93FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09953492564FE3600F93FB4 /* Assets.xcassets */; };
 		F09953502564FE3600F93FB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F099534F2564FE3600F93FB4 /* main.m */; };
 		F0995363256500A300F93FB4 /* DragProgressBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0995362256500A300F93FB4 /* DragProgressBarViewController.m */; };
+		F0995368256566D500F93FB4 /* SLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0995367256566D500F93FB4 /* SLProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		F099534F2564FE3600F93FB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0995361256500A300F93FB4 /* DragProgressBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragProgressBarViewController.h; sourceTree = "<group>"; };
 		F0995362256500A300F93FB4 /* DragProgressBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragProgressBarViewController.m; sourceTree = "<group>"; };
+		F0995366256566D500F93FB4 /* SLProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLProgressView.h; sourceTree = "<group>"; };
+		F0995367256566D500F93FB4 /* SLProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 				F0995361256500A300F93FB4 /* DragProgressBarViewController.h */,
 				F0995362256500A300F93FB4 /* DragProgressBarViewController.m */,
 				F099534F2564FE3600F93FB4 /* main.m */,
+				F0995366256566D500F93FB4 /* SLProgressView.h */,
+				F0995367256566D500F93FB4 /* SLProgressView.m */,
 			);
 			path = DragProgressBar;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			files = (
 				F0995363256500A300F93FB4 /* DragProgressBarViewController.m in Sources */,
 				F099533F2564FE3500F93FB4 /* AppDelegate.m in Sources */,
+				F0995368256566D500F93FB4 /* SLProgressView.m in Sources */,
 				F09953502564FE3600F93FB4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

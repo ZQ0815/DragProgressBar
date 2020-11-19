@@ -9,6 +9,7 @@
 
 #define SLProgressBorderWidth 2.0f
 #define SLProgressPadding 1.0f
+#define SLProgressMargin (SLProgressBorderWidth + SLProgressPadding)
 #define SLProgressColor [UIColor colorWithRed:0/255.0 green:191/255.0 blue:255/255.0 alpha:1]
 
 @interface SLProgressView ()
@@ -43,6 +44,8 @@
 - (UIView *) processView {
     if (!_processView) {
         _processView = [UIView new];
+        CGFloat heigth = self.bounds.size.height - SLProgressMargin * 2;
+        _processView.frame = CGRectMake(SLProgressMargin, SLProgressMargin, 0, heigth);
         _processView.backgroundColor = SLProgressColor;
         _processView.layer.cornerRadius = (self.bounds.size.height - (SLProgressBorderWidth + SLProgressPadding) * 2) * 0.5;
     }
@@ -58,11 +61,11 @@
         progress = 0;
     }
     _progress = progress;
-    CGFloat margin = SLProgressBorderWidth + SLProgressPadding;
-    CGFloat maxWidth = self.bounds.size.width - margin * 2;
-    CGFloat heigth = self.bounds.size.height - margin * 2;
-    
-    _processView.frame = CGRectMake(margin, margin, maxWidth * progress, heigth);
+    CGFloat heigth = self.bounds.size.height - SLProgressMargin * 2;
+    CGFloat maxWidth = self.bounds.size.width - SLProgressMargin * 2;
+    [UIView animateWithDuration:3 delay:0 options:UIViewAnimationOptionTransitionNone animations:^{
+        self.processView.frame = CGRectMake(SLProgressMargin, SLProgressMargin, maxWidth * progress, heigth);
+    } completion:nil];
 }
 
 @end
